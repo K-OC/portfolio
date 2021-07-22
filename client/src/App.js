@@ -3,11 +3,14 @@ import styled from "styled-components";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import Header from "./Components/Header";
+import GlobalStyles from "./Components/GlobalStyles";
+
 function App() {
   return (
     <>
       <BrowserRouter>
         <Wrapper>
+          <GlobalStyles />
           <Header />
           <Switch>
             <Route path="/" exact>
@@ -25,6 +28,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100vw;
   height: 100vh;
+  font-family: var(--header-font)
 `;
 
 export default App;

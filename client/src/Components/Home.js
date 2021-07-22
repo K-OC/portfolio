@@ -5,11 +5,24 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <Wrapper>Hello</Wrapper>
+      <Wrapper>
+        <ImgWrapper>
+          <Img src="/img.jpg" />
+        </ImgWrapper>
+      </Wrapper>
     </>
   );
 };
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  width: 100vw;
+  height: 100vh;
+`;
+const ImgWrapper = styled.div`
+  max-width: 50vw;
+  max-height: 100vh;
+`;
+
+const Img = styled.img``;
 
 export default Home;

@@ -7,7 +7,6 @@ const Header = () => {
     <>
       <Wrapper>
         <Title>Kieran O'Connell</Title>
-
       </Wrapper>
     </>
   );
@@ -15,11 +14,11 @@ const Header = () => {
 
 const Wrapper = styled.div`
   width: 100vw;
-  
 `;
 
 const Title = styled.h1`
-font-family: var(--header-font);
-`
+  font-family: var(--header-font);
+  color: beige;
+`;
 
 export default Header;

@@ -28,7 +28,8 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  font-family: var(--header-font)
+  font-family: var(--header-font);
+  margin: 0;
 `;
 
 export default App;

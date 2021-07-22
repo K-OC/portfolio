@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <Wrapper>
-        <ImgWrapper>
+        <ImgWrapper style={{ "background-image": "/background.jpg" }}>
           <Img src="/img.jpg" />
         </ImgWrapper>
       </Wrapper>
@@ -15,12 +15,13 @@ const Home = () => {
 };
 
 const Wrapper = styled.div`
+  display: flex;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  align-items: center;
 `;
 const ImgWrapper = styled.div`
-  max-width: 50vw;
-  max-height: 100vh;
+  width: 100vw;
 `;
 
 const Img = styled.img`

@@ -23,6 +23,8 @@ const ImgWrapper = styled.div`
   max-height: 100vh;
 `;
 
-const Img = styled.img``;
+const Img = styled.img`
+  max-width: 50vw;
+`;
 
 export default Home;

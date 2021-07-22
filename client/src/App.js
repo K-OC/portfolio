@@ -2,11 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./Components/Home";
+import Header from "./Components/Header";
 function App() {
   return (
     <>
       <BrowserRouter>
         <Wrapper>
+          <Header />
           <Switch>
             <Route path="/" exact>
               <Home />

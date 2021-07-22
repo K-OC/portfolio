@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 
 const Title = styled.h1`
   font-family: var(--header-font);
-  color: beige;
+  color: #e6e6e6;
 `;
 
 export default Header;

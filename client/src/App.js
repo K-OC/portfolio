@@ -27,6 +27,8 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100vw;
+  background-color: #070707;
+  height: fit-content
   height: 100vh;
   font-family: var(--header-font);
   margin: 0;

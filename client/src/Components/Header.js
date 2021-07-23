@@ -32,12 +32,13 @@ const Header = () => {
         </IconWrapper>
         <BurgerWrapper>
           <StyledButton onClick={handleClick}>
-            <GiHamburgerMenu color="white" size="2rem" />
             {clicked === true ? (
               <DropListWrapper>
                 <DropList />
               </DropListWrapper>
-            ) : null}
+            ) : (
+              <GiHamburgerMenu color="white" size="2rem" />
+            )}
           </StyledButton>
         </BurgerWrapper>
       </Wrapper>
@@ -61,6 +62,7 @@ const IconWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+
   @media (max-width: 769px) {
     display: none;
   }
@@ -69,6 +71,7 @@ const BurgerWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
   @media (min-width: 769px) {
     display: none;
   }
@@ -76,7 +79,15 @@ const BurgerWrapper = styled.div`
 
 const StyledButton = styled.button`
   background-color: #070707;
+  border: none;
 `;
-const DropListWrapper = styled.div``;
+const DropListWrapper = styled.div`
+  @media (max-width: 768px) {
+    font-size: 8px;
+  }
+  @media (max-width: 400px) {
+    font-size: 5px;
+  }
+`;
 
 export default Header;

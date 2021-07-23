@@ -7,13 +7,15 @@ const DropList = () => {
       <Wrapper>
         <List>
           <Item>
-            <Link href="/profile">Profile</Link>
+            <Link href="https://github.com/K-OC" taget="_blank">
+              Github
+            </Link>
           </Item>
           <Item>
-            <Link href="/favorites">Favorites</Link>
+            <Link href="https://www.linkedin.com/in/kieran-oc/">LinkedIn</Link>
           </Item>
           <Item>
-            <Link href="/logout">Log Out</Link>
+            <Link href="/Projects">Projects</Link>
           </Item>
         </List>
       </Wrapper>
@@ -23,9 +25,11 @@ const DropList = () => {
 
 const Wrapper = styled.div`
   display: flex;
+  padding: 5px;
   align-items: center;
   justify-content: center;
 `;
+
 const List = styled.ul``;
 const Item = styled.li`
   font-size: 1.5em;

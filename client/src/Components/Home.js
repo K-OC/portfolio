@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import AboutCard from "./AboutCard";
+import Projects from "./Projects";
 
 const Home = () => {
   return (
@@ -13,6 +14,9 @@ const Home = () => {
         <AboutWrapper>
           <AboutCard />
         </AboutWrapper>
+        <ProjectsWrapper>
+          <Projects />
+        </ProjectsWrapper>
       </Wrapper>
     </>
   );
@@ -38,5 +42,6 @@ const AboutWrapper = styled.div`
   align-items: center;
   justify-content: center;
 `;
+const ProjectsWrapper = styled.div``;
 
 export default Home;

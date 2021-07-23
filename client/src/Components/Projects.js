@@ -33,9 +33,20 @@ const Projects = () => {
 };
 
 const CardWrapper = styled.div`
+display: flex;
+align-items: center;
 color: white;
+width: 50vw;
+height: 50vh;
+
 `
 const CardItem = styled.div`
-max-width: 100vw;
+width: fit-content;
+height: fit-content;
+border: 1px solid white;
+
+@media (max-width: 769px) {
+    border: none;
+  }
 `
 export default Projects;

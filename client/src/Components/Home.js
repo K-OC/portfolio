@@ -11,12 +11,14 @@ const Home = () => {
         <ImgWrapper>
           <Img src="/img.jpg" />
         </ImgWrapper>
+        <CardWrapper>
         <AboutWrapper>
           <AboutCard />
         </AboutWrapper>
         <ProjectsWrapper>
           <Projects />
         </ProjectsWrapper>
+        </CardWrapper>
       </Wrapper>
     </>
   );
@@ -38,10 +40,18 @@ const Img = styled.img`
 `;
 
 const AboutWrapper = styled.div`
-  height: 100vh;
-  align-items: center;
+  height: 50vh;
+  
+`;
+const ProjectsWrapper = styled.div`
+height: 50vh;
+align-items: center;
   justify-content: center;
 `;
-const ProjectsWrapper = styled.div``;
+
+const CardWrapper = styled.div`
+display: flex;
+flex-direction: column;
+`
 
 export default Home;

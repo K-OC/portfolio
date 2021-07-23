@@ -27,7 +27,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100vw;
-  background-color: #070707;
+  background-image: linear-gradient(to bottom, #070707, #e6e6e6);
   height: fit-content;
   font-family: var(--header-font);
   margin: 0;

@@ -1,11 +1,19 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import DropList from "./DropList";
 import { SocialIcon } from "react-social-icons";
 import { GiHamburgerMenu } from "react-icons/gi";
-
 // import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [clicked, setClicked] = useState(null);
+  const handleClick = () => {
+    if (clicked !== true) {
+      setClicked(true);
+    } else {
+      setClicked(false);
+    }
+  };
   return (
     <>
       <Wrapper>
@@ -23,8 +31,9 @@ const Header = () => {
           />
         </IconWrapper>
         <BurgerWrapper>
-          <StyledButton>
+          <StyledButton onClick={handleClick}>
             <GiHamburgerMenu color="white" size="2rem" />
+            {clicked === true ? <DropList /> : null}
           </StyledButton>
         </BurgerWrapper>
       </Wrapper>

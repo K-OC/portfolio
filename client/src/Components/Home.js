@@ -46,7 +46,7 @@ const AboutWrapper = styled.div`
 const ProjectsWrapper = styled.div`
 height: 50vh;
 align-items: center;
-  justify-content: center;
+justify-content: center;
 `;
 
 const CardWrapper = styled.div`

@@ -20,8 +20,7 @@ const Home = () => {
 
 const Wrapper = styled.div`
   display: flex;
-
-  width: 100vw;
+  width: fit-content;
   min-height: fit-content;
   align-items: center;
 `;

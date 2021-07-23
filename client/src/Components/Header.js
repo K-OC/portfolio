@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { SocialIcon } from "react-social-icons";
 import { GiHamburgerMenu } from "react-icons/gi";
+
 // import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <>
@@ -20,7 +22,11 @@ const Header = () => {
             url="https://www.linkedin.com/in/kieran-oc/"
           />
         </IconWrapper>
-        <GiHamburgerMenu color="white" />
+        <BurgerWrapper>
+          <StyledButton>
+            <GiHamburgerMenu color="white" size="2rem" />
+          </StyledButton>
+        </BurgerWrapper>
       </Wrapper>
     </>
   );
@@ -42,6 +48,21 @@ const IconWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+  @media (max-width: 769px) {
+    display: none;
+  }
+`;
+const BurgerWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 769px) {
+    display: none;
+  }
+`;
+
+const StyledButton = styled.button`
+  background-color: #070707;
 `;
 
 export default Header;

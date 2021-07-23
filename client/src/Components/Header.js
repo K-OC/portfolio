@@ -33,7 +33,11 @@ const Header = () => {
         <BurgerWrapper>
           <StyledButton onClick={handleClick}>
             <GiHamburgerMenu color="white" size="2rem" />
-            {clicked === true ? <DropList /> : null}
+            {clicked === true ? (
+              <DropListWrapper>
+                <DropList />
+              </DropListWrapper>
+            ) : null}
           </StyledButton>
         </BurgerWrapper>
       </Wrapper>
@@ -73,5 +77,6 @@ const BurgerWrapper = styled.div`
 const StyledButton = styled.button`
   background-color: #070707;
 `;
+const DropListWrapper = styled.div``;
 
 export default Header;

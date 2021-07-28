@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <>
       <Wrapper>
-        <Title>Kieran O'Connell</Title>
+        <Title><StyledLink href="/">Kieran O'Connell</StyledLink></Title>
         <IconWrapper>
           <SocialIcon
             fgColor="#070707"
@@ -29,6 +29,7 @@ const Header = () => {
             bgColor="#e6e6e6"
             url="https://www.linkedin.com/in/kieran-oc/"
           />
+          <ProjectsIcon>t</ProjectsIcon>
         </IconWrapper>
         <BurgerWrapper>
           <StyledButton onClick={handleClick}>
@@ -90,4 +91,18 @@ const DropListWrapper = styled.div`
   }
 `;
 
+const StyledLink = styled.a`
+text-decoration: none;
+color: white;
+`
+const ProjectsIcon = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 100%;
+background-color: #e6e6e6;
+height: 3.2rem;
+width: 3.2rem;
+
+`
 export default Header;

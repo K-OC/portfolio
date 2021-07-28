@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import Header from "./Components/Header";
 import GlobalStyles from "./Components/GlobalStyles";
+import Projects from "./Components/Projects";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
           <Switch>
             <Route path="/" exact>
               <Home />
+            </Route>
+            <Route path="Projects">
+              <Projects />
             </Route>
           </Switch>
         </Wrapper>

@@ -15,9 +15,7 @@ const Home = () => {
         <AboutWrapper>
           <AboutCard />
         </AboutWrapper>
-        <ProjectsWrapper>
-          <Projects />
-        </ProjectsWrapper>
+        
         </CardWrapper>
       </Wrapper>
     </>

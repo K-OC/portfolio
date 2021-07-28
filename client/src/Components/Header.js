@@ -29,7 +29,7 @@ const Header = () => {
             bgColor="#e6e6e6"
             url="https://www.linkedin.com/in/kieran-oc/"
           />
-          <ProjectsIcon>t</ProjectsIcon>
+          <ProjectsIcon href="/Projects">t</ProjectsIcon>
         </IconWrapper>
         <BurgerWrapper>
           <StyledButton onClick={handleClick}>
@@ -95,7 +95,7 @@ const StyledLink = styled.a`
 text-decoration: none;
 color: white;
 `
-const ProjectsIcon = styled.div`
+const ProjectsIcon = styled.a`
 display: flex;
 align-items: center;
 justify-content: center;
@@ -103,6 +103,7 @@ border-radius: 100%;
 background-color: #e6e6e6;
 height: 3.2rem;
 width: 3.2rem;
-
+text-decoration: none;
 `
+
 export default Header;

@@ -15,7 +15,6 @@ const Home = () => {
         <AboutWrapper>
           <AboutCard />
         </AboutWrapper>
-        
         </CardWrapper>
       </Wrapper>
     </>
@@ -24,6 +23,7 @@ const Home = () => {
 
 const Wrapper = styled.div`
   display: flex;
+  flex-direction: row;
   width: fit-content;
   min-height: fit-content;
   align-items: center;
@@ -38,8 +38,8 @@ const Img = styled.img`
 `;
 
 const AboutWrapper = styled.div`
-  height: 50vh;
-  
+  width: 50vw;
+  height: 100vh;  
 `;
 const ProjectsWrapper = styled.div`
 height: 50vh;
@@ -50,6 +50,7 @@ justify-content: center;
 const CardWrapper = styled.div`
 display: flex;
 flex-direction: column;
+margin-bottom: 50px;
 `
 
 export default Home;

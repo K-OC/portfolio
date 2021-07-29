@@ -56,6 +56,11 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h1`
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0;
+padding: 0;
   font-family: var(--header-font);
   color: #e6e6e6;
 `;
@@ -95,7 +100,8 @@ const DropListWrapper = styled.div`
 const StyledLink = styled.a`
 text-decoration: none;
 color: #e6e6e6;
-
+margin: 0;
+padding: 0;
 `
 const ProjectsIcon = styled.a`
 display: flex;

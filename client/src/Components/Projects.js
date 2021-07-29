@@ -9,26 +9,44 @@ const Projects = () => {
     <>
     <Wrapper>
       <Carousel autoPlay="true"
-      infiniteLoop="true">
+      infiniteLoop="true"
+      stopOnHover="true"
+      interval="10000"
+      >
         <CardWrapper>
           <h1>Moodr</h1>
           <div>moodr is the simple social network where you can share where and what you feel</div>
+          <ImgWrapper>
           <Img src="/moodr1.JPG"/>
+          </ImgWrapper>
         </CardWrapper>
         <CardWrapper>
           <h1>Moodr</h1>
           <div>the user selects an emotion</div>
+          <ImgWrapper>
           <Img src="/moodr4.JPG"/>
+          </ImgWrapper>
         </CardWrapper>
         <CardWrapper>
           <h1>Moodr</h1>
           <div>based on the google maps api, moodr allows users to drop a pin</div>
+          <ImgWrapper>
           <Img src="/moodr2.JPG"/>
+          </ImgWrapper>
         </CardWrapper>
         <CardWrapper>
           <h1>Moodr</h1>
           <div>which contains a corresponding info window</div>
+         <ImgWrapper>
           <Img src="/moodr3.JPG"/>
+          </ImgWrapper>
+        </CardWrapper>
+        <CardWrapper>
+          <h1>Moodr</h1>
+          <div>and populates the global feed</div>
+          <ImgWrapper>  
+          <Img src="moodr6.png"/>
+          </ImgWrapper>
         </CardWrapper>
         <CardWrapper>
           <a>https://github.com/K-OC/moodr</a>
@@ -54,8 +72,8 @@ const CardWrapper = styled.div`
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
   border: 1px solid white;
 
   background-image: linear-gradient(
@@ -71,6 +89,13 @@ const Wrapper = styled.div`
 `;
 
 const Img = styled.img`
+height: fit-content;
+width: fit-content;
+`
+const ImgWrapper = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
 max-height: 50rem;
 max-width: 50rem;
 `

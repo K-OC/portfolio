@@ -8,11 +8,17 @@ const Projects = () => {
   return (
     <>
     <Wrapper>
-      <Carousel>
+      <Carousel autoPlay="true"
+      infiniteLoop="true">
         <CardWrapper>
           <h1>Moodr</h1>
           <div>moodr is the simple social network where you can share where and what you feel</div>
           <Img src="/moodr1.JPG"/>
+        </CardWrapper>
+        <CardWrapper>
+          <h1>Moodr</h1>
+          <div>the user selects an emotion</div>
+          <Img src="/moodr4.JPG"/>
         </CardWrapper>
         <CardWrapper>
           <h1>Moodr</h1>
@@ -23,6 +29,9 @@ const Projects = () => {
           <h1>Moodr</h1>
           <div>which contains a corresponding info window</div>
           <Img src="/moodr3.JPG"/>
+        </CardWrapper>
+        <CardWrapper>
+          <a>https://github.com/K-OC/moodr</a>
         </CardWrapper>
       </Carousel>
       </Wrapper>
@@ -35,7 +44,6 @@ const CardWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid white;
 
   color: white;
   @media (max-width: 769px) {
@@ -48,6 +56,8 @@ const Wrapper = styled.div`
   flex-direction: column;
   min-width: 100vw;
   min-height: 100vh;
+  border: 1px solid white;
+
   background-image: linear-gradient(
     to bottom,
     #070707,

@@ -101,8 +101,8 @@ align-items: center;
 justify-content: center;
 border-radius: 100%;
 background-color: #e6e6e6;
-height: 3.2rem;
-width: 3.2rem;
+height: 52px;
+width: 52px;
 text-decoration: none;
 `
 

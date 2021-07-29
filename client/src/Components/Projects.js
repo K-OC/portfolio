@@ -11,6 +11,18 @@ const Projects = () => {
       <Carousel>
         <CardWrapper>
           <h1>Moodr</h1>
+          <div>moodr is the simple social network where you can share where and what you feel</div>
+          <Img src="/moodr1.JPG"/>
+        </CardWrapper>
+        <CardWrapper>
+          <h1>Moodr</h1>
+          <div>based on the google maps api, moodr allows users to drop a pin</div>
+          <Img src="/moodr2.JPG"/>
+        </CardWrapper>
+        <CardWrapper>
+          <h1>Moodr</h1>
+          <div>which contains a corresponding info window</div>
+          <Img src="/moodr3.JPG"/>
         </CardWrapper>
       </Carousel>
       </Wrapper>
@@ -20,6 +32,8 @@ const Projects = () => {
 
 const CardWrapper = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   border: 1px solid white;
 
@@ -46,5 +60,9 @@ const Wrapper = styled.div`
   margin: 0;
 `;
 
+const Img = styled.img`
+max-height: 50rem;
+max-width: 50rem;
+`
 
 export default Projects;

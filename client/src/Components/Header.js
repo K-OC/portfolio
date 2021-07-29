@@ -28,6 +28,7 @@ const Header = () => {
             fgColor="#070707"
             bgColor="#e6e6e6"
             url="https://www.linkedin.com/in/kieran-oc/"
+         
           />
           <ProjectsIcon href="/Projects"><PIcon>Projects</PIcon></ProjectsIcon>
         </IconWrapper>

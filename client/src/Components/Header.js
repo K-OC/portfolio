@@ -29,7 +29,7 @@ const Header = () => {
             bgColor="#e6e6e6"
             url="https://www.linkedin.com/in/kieran-oc/"
           />
-          <ProjectsIcon href="/Projects"><PIcon>P</PIcon></ProjectsIcon>
+          <ProjectsIcon href="/Projects"><PIcon>Projects</PIcon></ProjectsIcon>
         </IconWrapper>
         <BurgerWrapper>
           <StyledButton onClick={handleClick}>
@@ -109,7 +109,7 @@ text-decoration: none;
 const PIcon = styled.h1`
 font-weight: bold;
 font-family: var(--header-font);
-font-size: 30px;
+font-size: 13px;
 color: #070707;
 
 `

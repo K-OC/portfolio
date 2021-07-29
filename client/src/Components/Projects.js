@@ -72,8 +72,8 @@ const CardWrapper = styled.div`
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+  width: 50vw;
+  height: 50vh;
   border: 1px solid white;
 
   background-image: linear-gradient(

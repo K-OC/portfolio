@@ -11,10 +11,12 @@ const Home = () => {
         <ImgWrapper>
           <Img src="/img.jpg" />
         </ImgWrapper>
+        <CardWrapper>
         <AboutWrapper>
           <AboutCard />
         </AboutWrapper>
         
+        </CardWrapper>
       </Wrapper>
     </>
   );
@@ -25,25 +27,29 @@ const Wrapper = styled.div`
   width: fit-content;
   min-height: fit-content;
   align-items: center;
-  justify-content: space-evenly;
 `;
 const ImgWrapper = styled.div`
-  max-width: 50vw;
-  max-height: 50vh;
-  padding-right: 2rem;
-  
+  width: 50vw;
+  height: 100vh;
 `;
 
 const Img = styled.img`
-  width: 50vw;
+  max-width: 40vw;
 `;
 
 const AboutWrapper = styled.div`
-  height: 100vh;
-display: flex;
+  height: 50vh;
+  
+`;
+const ProjectsWrapper = styled.div`
+height: 50vh;
+align-items: center;
+justify-content: center;
 `;
 
-
-
+const CardWrapper = styled.div`
+display: flex;
+flex-direction: column;
+`
 
 export default Home;

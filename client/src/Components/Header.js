@@ -29,7 +29,7 @@ const Header = () => {
             bgColor="#e6e6e6"
             url="https://www.linkedin.com/in/kieran-oc/"
           />
-          <ProjectsIcon href="/Projects">t</ProjectsIcon>
+          <ProjectsIcon href="/Projects"><PIcon>P</PIcon></ProjectsIcon>
         </IconWrapper>
         <BurgerWrapper>
           <StyledButton onClick={handleClick}>
@@ -93,7 +93,8 @@ const DropListWrapper = styled.div`
 
 const StyledLink = styled.a`
 text-decoration: none;
-color: white;
+color: #e6e6e6;
+
 `
 const ProjectsIcon = styled.a`
 display: flex;
@@ -105,5 +106,11 @@ height: 52px;
 width: 52px;
 text-decoration: none;
 `
+const PIcon = styled.h1`
+font-weight: bold;
+font-family: var(--header-font);
+font-size: 30px;
+color: #070707;
 
+`
 export default Header;

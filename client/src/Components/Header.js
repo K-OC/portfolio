@@ -70,7 +70,7 @@ const Title = styled.h1`
 const IconWrapper = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 1rem;
   @media (max-width: 769px) {
     display: none;

@@ -6,11 +6,12 @@ import { Carousel } from "react-responsive-carousel";
 const Projects = () => {
   return (
     <>
+    <WrapperWrapper>
       <Wrapper>
         <Carousel
           autoPlay="true"
-          infiniteLoop="true"
           stopOnHover="true"
+          infiniteLoop="true"
           interval="10000"
         >
           <CardWrapper>
@@ -75,13 +76,15 @@ const Projects = () => {
             <ProjectCopy>https://github.com/K-OC/moodr</ProjectCopy>
           </CardWrapper>
         </Carousel>
+
       </Wrapper>
+      <Description>Hello</Description>
+
+      </WrapperWrapper>
     </>
   );
 };
 const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
   width: 50vw;
   height: 100vh;
 
@@ -129,4 +132,14 @@ const HeaderText = styled.h1`
   color: #e6e6e6;
   line-height: 1;
 `;
+const Description = styled.div`
+  color: #e6e6e6;
+  padding-right: 20%;
+
+`
+const WrapperWrapper = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+`
 export default Projects;

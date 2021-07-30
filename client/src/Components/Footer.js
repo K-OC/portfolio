@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
     <FooterWrapper>
-      Hello
+      {/* Hello */}
     </FooterWrapper>
     </>
   );

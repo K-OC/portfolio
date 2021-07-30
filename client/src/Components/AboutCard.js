@@ -15,7 +15,7 @@ const AboutCard = () => {
           providing access to entertainment and technology was paramount in
           helping people find degrees of stability and safety that many of us
           take for granted. In my spare time, I want to apply my skills in
-          development in ways that can benefit vulnerable and margninalized
+          development in ways that can benefit vulnerable and marginalized
           people in my community.
         </BodyCopy>
       </Wrapper>

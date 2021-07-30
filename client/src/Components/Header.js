@@ -17,7 +17,9 @@ const Header = () => {
   return (
     <>
       <Wrapper>
-        <Title><StyledLink href="/">Kieran O'Connell</StyledLink></Title>
+        <Title>
+          <StyledLink href="/">Kieran O'Connell</StyledLink>
+        </Title>
         <IconWrapper>
           <SocialIcon
             fgColor="#070707"
@@ -28,9 +30,10 @@ const Header = () => {
             fgColor="#070707"
             bgColor="#e6e6e6"
             url="https://www.linkedin.com/in/kieran-oc/"
-         
           />
-          <ProjectsIcon href="/Projects"><PIcon>Projects</PIcon></ProjectsIcon>
+          <ProjectsIcon href="/Projects">
+            <PIcon>Projects</PIcon>
+          </ProjectsIcon>
         </IconWrapper>
         <BurgerWrapper>
           <StyledButton onClick={handleClick}>
@@ -56,11 +59,11 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h1`
-display: flex;
-align-items: center;
-justify-content: center;
-margin: 0;
-padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
   font-family: var(--header-font);
   color: #e6e6e6;
 `;
@@ -69,7 +72,6 @@ const IconWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-
   @media (max-width: 769px) {
     display: none;
   }
@@ -98,26 +100,26 @@ const DropListWrapper = styled.div`
 `;
 
 const StyledLink = styled.a`
-text-decoration: none;
-color: #e6e6e6;
-margin: 0;
-padding: 0;
-`
+  text-decoration: none;
+  color: #e6e6e6;
+  margin: 0;
+  padding: 0;
+`;
 const ProjectsIcon = styled.a`
-display: flex;
-align-items: center;
-justify-content: center;
-border-radius: 100%;
-background-color: #e6e6e6;
-height: 52px;
-width: 52px;
-text-decoration: none;
-`
-const PIcon = styled.h1`
-font-weight: bold;
-font-family: var(--header-font);
-font-size: 13px;
-color: #070707;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #e6e6e6;
+  height: 52px;
+  width: 52px;
 
-`
+  text-decoration: none;
+`;
+const PIcon = styled.h1`
+  font-weight: bold;
+  font-family: var(--header-font);
+  font-size: 13px;
+  color: #070707;
+`;
 export default Header;

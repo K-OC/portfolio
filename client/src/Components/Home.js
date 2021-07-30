@@ -12,9 +12,9 @@ const Home = () => {
           <Img src="/img.jpg" />
         </ImgWrapper>
         <CardWrapper>
-        <AboutWrapper>
-          <AboutCard />
-        </AboutWrapper>
+          <AboutWrapper>
+            <AboutCard />
+          </AboutWrapper>
         </CardWrapper>
       </Wrapper>
     </>
@@ -39,18 +39,18 @@ const Img = styled.img`
 
 const AboutWrapper = styled.div`
   width: 50vw;
-  height: 100vh;  
+  height: 100vh;
 `;
-const ProjectsWrapper = styled.div`
-height: 50vh;
-align-items: center;
-justify-content: center;
-`;
+// const ProjectsWrapper = styled.div`
+// height: 50vh;
+// align-items: center;
+// justify-content: center;
+// `;
 
 const CardWrapper = styled.div`
-display: flex;
-flex-direction: column;
-margin-bottom: 50px;
-`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+`;
 
 export default Home;

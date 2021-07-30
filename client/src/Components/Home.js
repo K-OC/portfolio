@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import AboutCard from "./AboutCard";
-import Projects from "./Projects";
 
 const Home = () => {
   return (

@@ -5,7 +5,7 @@ import Home from "./Components/Home";
 import Header from "./Components/Header";
 import GlobalStyles from "./Components/GlobalStyles";
 import Projects from "./Components/Projects";
-
+import Footer from "./Components/Footer";
 function App() {
   return (
     <>
@@ -23,6 +23,7 @@ function App() {
           </Switch>
         </Wrapper>
       </BrowserRouter>
+      <Footer />
     </>
   );
 }

@@ -13,6 +13,7 @@ const Projects = () => {
           stopOnHover="true"
           infiniteLoop="true"
           interval="10000"
+          showIndicators="false"
         >
           <CardWrapper>
             <HeaderText>Moodr</HeaderText>
@@ -123,9 +124,10 @@ const ImgWrapper = styled.div`
 
 const ProjectCopy = styled.p`
   color: #e6e6e6;
-  font-size: 20px;
+  font-size: 30px;
   margin: 1em;
   line-height: 1;
+  padding-bottom: 10px;
 `;
 
 const HeaderText = styled.h1`
@@ -135,6 +137,7 @@ const HeaderText = styled.h1`
 const Description = styled.div`
   color: #e6e6e6;
   padding-right: 20%;
+  
 
 `
 const WrapperWrapper = styled.div`

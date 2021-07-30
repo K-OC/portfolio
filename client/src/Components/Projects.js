@@ -34,7 +34,7 @@ const Projects = () => {
           <CardWrapper>
             <h1>Moodr</h1>
             <ProjectCopy>
-              based on the google maps api, moodr allows users to drop a pin
+              moodr uses the google maps api, allowing users to drop a pin
             </ProjectCopy>
             <ImgWrapper>
               <Img src="/moodr2.JPG" />

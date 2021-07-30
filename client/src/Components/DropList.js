@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+
 
 const DropList = () => {
   return (
@@ -7,15 +9,15 @@ const DropList = () => {
       <Wrapper>
         <List>
           <Item>
-            <Link href="https://github.com/K-OC" taget="_blank">
+            <StyledLink href="https://github.com/K-OC" taget="_blank">
               Github
-            </Link>
+            </StyledLink>
           </Item>
           <Item>
-            <Link href="https://www.linkedin.com/in/kieran-oc/">LinkedIn</Link>
+            <StyledLink href="https://www.linkedin.com/in/kieran-oc/">LinkedIn</StyledLink>
           </Item>
           <Item>
-            <Link href="/Projects">Projects</Link>
+            <NavLink to="/projects">Projects</NavLink>
           </Item>
         </List>
       </Wrapper>
@@ -34,11 +36,14 @@ const List = styled.ul``;
 const Item = styled.li`
   font-size: 1.5em;
 `;
-const Link = styled.a`
+const StyledLink = styled.a`
   text-decoration: none;
   color: white;
   &:hover {
     color: teal;
   }
 `;
+const NavLink = styled(Link)`
+
+`
 export default DropList;

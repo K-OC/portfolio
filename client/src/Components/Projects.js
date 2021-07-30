@@ -121,9 +121,11 @@ const ProjectCopy = styled.p`
   color: #e6e6e6;
   font-size: 20px;
   margin: 1em;
+  line-height: 1;
 `;
 
 const HeaderText = styled.h1`
-  color: #e6e6e6; ;
+  color: #e6e6e6;
+  line-height: 1;
 `;
 export default Projects;

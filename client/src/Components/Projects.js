@@ -38,11 +38,10 @@ const Projects = () => {
               />
             </ImgWrapper>
             <ProjectCopy>the user selects an emotion</ProjectCopy>
-
           </CardWrapper>
           <CardWrapper>
             <HeaderText>Moodr</HeaderText>
-           
+
             <ImgWrapper>
               <Img src="/moodr2.JPG" alt="close up of a crow icon on the map" />
             </ImgWrapper>
@@ -52,7 +51,7 @@ const Projects = () => {
           </CardWrapper>
           <CardWrapper>
             <HeaderText>Moodr</HeaderText>
-         
+
             <ImgWrapper>
               <Img
                 src="/moodr3.JPG"
@@ -72,7 +71,6 @@ const Projects = () => {
               />
             </ImgWrapper>
             <ProjectCopy>and populates the global feed</ProjectCopy>
-
           </CardWrapper>
           <CardWrapper>
             <ProjectCopy>https://github.com/K-OC/moodr</ProjectCopy>

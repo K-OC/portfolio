@@ -22,8 +22,9 @@ function App() {
             </Route>
           </Switch>
         </Wrapper>
+        <Footer />
+
       </BrowserRouter>
-      <Footer />
     </>
   );
 }
@@ -31,7 +32,7 @@ function App() {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  min-width: 100vw;
   background-image: linear-gradient(
     to bottom,
     #070707,
@@ -39,7 +40,7 @@ const Wrapper = styled.div`
     #070707,
     #00796b
   );
-  height: fit-content;
+  height: min-content;
   font-family: var(--header-font);
   margin: 0;
 `;

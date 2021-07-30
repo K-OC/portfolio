@@ -3,7 +3,7 @@ import styled from "styled-components";
 import DropList from "./DropList";
 import { SocialIcon } from "react-social-icons";
 import { GiHamburgerMenu } from "react-icons/gi";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [clicked, setClicked] = useState(null);
@@ -31,7 +31,8 @@ const Header = () => {
             bgColor="#e6e6e6"
             url="https://www.linkedin.com/in/kieran-oc/"
           />
-          <ProjectsIcon href="/Projects">
+
+          <ProjectsIcon to="/Projects">
             <PIcon>Projects</PIcon>
           </ProjectsIcon>
         </IconWrapper>
@@ -105,7 +106,8 @@ const StyledLink = styled.a`
   margin: 0;
   padding: 0;
 `;
-const ProjectsIcon = styled.a`
+
+const ProjectsIcon = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;

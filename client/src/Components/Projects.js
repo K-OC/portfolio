@@ -16,67 +16,54 @@ const Projects = () => {
         >
           <CardWrapper>
             <h1>Moodr</h1>
-            <div>
+            <ProjectCopy>
               moodr is the simple social network where you can share where and
               what you feel
-            </div>
+            </ProjectCopy>
             <ImgWrapper>
               <Img src="/moodr1.JPG" />
             </ImgWrapper>
           </CardWrapper>
           <CardWrapper>
             <h1>Moodr</h1>
-            <div>the user selects an emotion</div>
+            <ProjectCopy>the user selects an emotion</ProjectCopy>
             <ImgWrapper>
               <Img src="/moodr4.JPG" />
             </ImgWrapper>
           </CardWrapper>
           <CardWrapper>
             <h1>Moodr</h1>
-            <div>
+            <ProjectCopy>
               based on the google maps api, moodr allows users to drop a pin
-            </div>
+            </ProjectCopy>
             <ImgWrapper>
               <Img src="/moodr2.JPG" />
             </ImgWrapper>
           </CardWrapper>
           <CardWrapper>
             <h1>Moodr</h1>
-            <div>which contains a corresponding info window</div>
+            <ProjectCopy>
+              which contains a corresponding info window
+            </ProjectCopy>
             <ImgWrapper>
               <Img src="/moodr3.JPG" />
             </ImgWrapper>
           </CardWrapper>
           <CardWrapper>
             <h1>Moodr</h1>
-            <div color="white">and populates the global feed</div>
+            <ProjectCopy>and populates the global feed</ProjectCopy>
             <ImgWrapper>
               <Img src="moodr6.png" />
             </ImgWrapper>
           </CardWrapper>
           <CardWrapper>
-            <a>https://github.com/K-OC/moodr</a>
+            <ProjectCopy>https://github.com/K-OC/moodr</ProjectCopy>
           </CardWrapper>
         </Carousel>
       </Wrapper>
     </>
   );
 };
-
-const CardWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border: 1px solid white;
-  min-height: 80vh;
-  padding: 1px;
-  color: white;
-  @media (max-width: 769px) {
-    border: none;
-  }
-`;
-
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -94,16 +81,38 @@ const Wrapper = styled.div`
   margin: 0;
 `;
 
+const CardWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid white;
+  min-height: 80vh;
+  min-width: 50vw;
+
+  padding: 1px;
+  color: white;
+  @media (max-width: 769px) {
+    border: none;
+  }
+`;
+
 const Img = styled.img`
-  height: fit-content;
-  width: fit-content;
+  height: max-content;
+  width: max-content;
 `;
 const ImgWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 50rem;
-  max-width: 50rem;
+  max-height: 30rem;
+  max-width: 30rem;
+  overflow: hidden;
 `;
 
+const ProjectCopy = styled.p`
+  color: #e6e6e6;
+  font-size: 20px;
+  margin: 0;
+`;
 export default Projects;

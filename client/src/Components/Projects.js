@@ -86,7 +86,6 @@ const Projects = () => {
             Moodr, above all else, is a data collection application. While the
             purpose of the app is not scientific, it can give users the ability
             to track how they feel across time and place. 
-            state.
           </ParText>{" "}
         </Description>
       </WrapperWrapper>

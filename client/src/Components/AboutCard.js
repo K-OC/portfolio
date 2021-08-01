@@ -8,7 +8,7 @@ const AboutCard = () => {
         <HeaderText>About me</HeaderText>
         <BodyCopy>
           I am a full-stack developer from St. John's, Newfoundland, Canada.
-          Having graduated from Concordia's Web Development boot camp in May,
+          Having graduated from Concordia's Full-Stack Web Development boot camp in May,
           2021, I am excited to learn and grow as a developer. Prior to shifting
           to development, I worked as a Director at a mid-sized non-profit.
           Although it was not part of my job description, I felt strongly that
@@ -16,7 +16,7 @@ const AboutCard = () => {
           helping people find degrees of stability and safety that many of us
           take for granted. In my spare time, I want to apply my skills in
           development in ways that can benefit vulnerable and marginalized
-          people in my community.
+          people in my community. 
         </BodyCopy>
       </Wrapper>
     </>

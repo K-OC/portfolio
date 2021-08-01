@@ -25,6 +25,12 @@ margin: 0;
 
 const StyledLink = styled(Link)`
 color: white;
-
+text-decoration: none;
+@media (min-width: 768px) {
+    font-size: 20px;
+  }
+  @media (max-width: 400px) {
+    font-size: 15px;
+  }
 `
 export default Footer;

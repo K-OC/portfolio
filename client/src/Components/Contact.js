@@ -4,9 +4,15 @@ import styled from "styled-components"
 const Contact  = () => {
     return (
         <>
-        <div>hello</div>
+        <Wrapper>hello</Wrapper>
         </>
     )
 }
+
+const Wrapper = styled.div`
+display: flex;
+height: 100vh;
+width: 100vw;
+`
 
 export default Contact

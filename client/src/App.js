@@ -6,6 +6,8 @@ import Header from "./Components/Header";
 import GlobalStyles from "./Components/GlobalStyles";
 import Projects from "./Components/Projects";
 import Footer from "./Components/Footer";
+import Contact from "./Components/Contact";
+
 function App() {
   return (
     <>
@@ -19,6 +21,9 @@ function App() {
             </Route>
             <Route path="/projects">
               <Projects />
+            </Route>
+            <Route>
+              <Contact/>
             </Route>
           </Switch>
         </Wrapper>

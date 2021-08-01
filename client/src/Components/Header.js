@@ -32,7 +32,7 @@ const Header = () => {
             url="https://www.linkedin.com/in/kieran-oc/"
           />
 
-          <ProjectsIcon to="/Projects">
+          <ProjectsIcon to="/projects">
             <PIcon>Projects</PIcon>
           </ProjectsIcon>
         </IconWrapper>

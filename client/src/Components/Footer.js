@@ -7,6 +7,7 @@ const Footer = () => {
     <>
     <FooterWrapper>
     <StyledLink to="/contact">Contact</StyledLink>
+    <StyledLink></StyledLink>
     </FooterWrapper>
     </>
   );

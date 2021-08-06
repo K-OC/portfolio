@@ -7,6 +7,7 @@ const Contact = () => {
       <Wrapper>
         <StyledTitle>Get in touch</StyledTitle>
         <StyledLink href="mailto:owner@kieran-oconnell.ca">Email</StyledLink>
+        <StyledLink>Telegram: @kieran7</StyledLink>
       </Wrapper>
     </>
   );
@@ -30,6 +31,7 @@ const StyledLink = styled.a`
   color: #e6e6e6;
   font-family: var(--header-font);
   text-decoration: none;
+
   &:hover {
     color: pink;
     translate: 2px;

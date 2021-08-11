@@ -7,7 +7,7 @@ const Footer = () => {
     <>
     <FooterWrapper>
     <StyledLink to="/contact">Contact</StyledLink>
-    <StyledLink></StyledLink>
+    <StyledLink to="/links">Links</StyledLink>
     </FooterWrapper>
     </>
   );
@@ -17,6 +17,7 @@ const FooterWrapper = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
+gap:13px;
 background-color:#00796b;
 width: 100vw;
 line-height: 1;

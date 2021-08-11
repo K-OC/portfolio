@@ -8,7 +8,7 @@ const Contact = () => {
         <StyledTitle>Get in touch</StyledTitle>
         <StyledLink href="mailto:owner@kieran-oconnell.ca">Email</StyledLink>
         <StyledLink href="#">Telegram: @kieran7</StyledLink>
-      </Wrapper>
+        </Wrapper>
     </>
   );
 };

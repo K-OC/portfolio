@@ -7,6 +7,7 @@ import GlobalStyles from "./Components/GlobalStyles";
 import Projects from "./Components/Projects";
 import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
+import Links from "./Components/Links"
 
 function App() {
   return (
@@ -23,7 +24,10 @@ function App() {
               <Projects />
             </Route>
             <Route>
-              <Contact/>
+              <Contact path="/contact"/>
+            </Route>
+            <Route>
+              <Links path="/links"/>
             </Route>
           </Switch>
         </Wrapper>

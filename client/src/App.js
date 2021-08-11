@@ -23,11 +23,11 @@ function App() {
             <Route path="/projects">
               <Projects />
             </Route>
-            <Route>
-              <Contact path="/contact"/>
+            <Route path="/contact">
+              <Contact />
             </Route>
-            <Route>
-              <Links path="/links"/>
+            <Route path="/links">
+              <Links />
             </Route>
           </Switch>
         </Wrapper>

@@ -5,11 +5,15 @@ const Links = () =>{
     return (
         <>
         <div>
-        <a href="georgenervous.bandcamp.com">George Nervous Four</a>
+        <a href="https://georgenervous.bandcamp.com">George Nervous Four</a>
 
         </div>
         </>
     )
 }
+
+const Wrapper = styled.div`
+
+`
 
 export default Links

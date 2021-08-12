@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
         <Wrapper>
           <GlobalStyles />
-          {window.location.pathname === "/links" ? (null) : <Header/>}
+          {window.location.pathname !== "/links" ?  <Header/> : (null)}
         
           <Switch>
             <Route path="/" exact>

@@ -17,7 +17,7 @@ const Links = () =>{
         <StyledLink href="https://eff.org">EFF</StyledLink>
         <StyledLink href="https://en.wikipedia.org/wiki/Neuromancer">neuromancer</StyledLink>
         <StyledLink href="https://www.youtube.com/user/8020drummer">80/20 drummer</StyledLink>
-        <StyledLink href="https://www.youtube.com/watch?v=_GxcFx8LZRk">Grappling</StyledLink>
+        <StyledLink href="https://www.youtube.com/watch?v=_GxcFx8LZRk">grappling</StyledLink>
         </Wrapper>
         </>
     )

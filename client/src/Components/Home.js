@@ -23,7 +23,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   width: fit-content;
-  min-height: fit-content;
+  height: fit-content;
   align-items: center;
 `;
 const ImgWrapper = styled.div`

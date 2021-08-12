@@ -13,6 +13,11 @@ const Links = () =>{
         <StyledLink href="https://www.saltwire.com/newfoundland-labrador/news/transport-subsidies-needed-for-newfoundland-and-labradors-low-income-earners-rogers-228647/">Transportation</StyledLink>
         <StyledLink href="https://www.cbc.ca/news/canada/newfoundland-labrador/leonard-phair-emergency-shelter-st-johns-gerry-rogers-al-hawkins-1.4684369">Housing</StyledLink>
         <StyledLink href="https://fb.watch/7kjZlYhiRL/">Speaking Engagement</StyledLink>
+        <h3>stuff that i like</h3>
+        <StyledLink href="https://eff.org">EFF</StyledLink>
+        <StyledLink href="https://en.wikipedia.org/wiki/Neuromancer">neuromancer</StyledLink>
+        <StyledLink href="https://www.youtube.com/user/8020drummer">80/20 drummer</StyledLink>
+        <StyledLink href="https://www.youtube.com/watch?v=_GxcFx8LZRk">Grappling</StyledLink>
         </Wrapper>
         </>
     )

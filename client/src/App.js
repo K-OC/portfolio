@@ -11,7 +11,6 @@ import Links from "./Components/Links"
 
 function App() {
   // const [header, setHeader] = useState(!header)
-  console.log(window.location.pathname)
   return (
     <>
       <BrowserRouter>
@@ -52,7 +51,7 @@ const Wrapper = styled.div`
     #070707,
     #00796b
   );
-  height: min-content;
+  height: fit-content;
   font-family: var(--header-font);
   margin: 0;
 `;

@@ -5,7 +5,7 @@ const Links = () =>{
     return (
         <>
         <Wrapper>
-        <a href="https://georgenervous.bandcamp.com">George Nervous Four</a>
+        <StyledLink href="https://georgenervous.bandcamp.com">George Nervous Four</StyledLink>
 
         </Wrapper>
         </>
@@ -13,7 +13,13 @@ const Links = () =>{
 }
 
 const Wrapper = styled.div`
-
+display: flex;
+flex-direction: column;
+background-color: white;
+height: 100vh;
+width: 100vw;
 `
-
+const StyledLink = styled.a`
+color: blue;
+`
 export default Links

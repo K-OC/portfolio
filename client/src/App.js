@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./Components/Home";
@@ -10,12 +10,15 @@ import Contact from "./Components/Contact";
 import Links from "./Components/Links"
 
 function App() {
+  // const [header, setHeader] = useState(!header)
+  console.log(window.location.pathname)
   return (
     <>
       <BrowserRouter>
         <Wrapper>
           <GlobalStyles />
-          <Header />
+          {window.location.pathname === "/links" ? (null) : <Header/>}
+        
           <Switch>
             <Route path="/" exact>
               <Home />

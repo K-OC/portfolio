@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
         <Wrapper>
           <GlobalStyles />
-          {header === !header || !header ? null : <Header />}
+          <Header />
           <Switch>
             <Route path="/" exact>
               <Home />
@@ -28,12 +28,7 @@ function App() {
             <Route path="/contact">
               <Contact />
             </Route>
-            <Route
-              path="/links"
-              onClick={() => {
-                setHeader(!header);
-              }}
-            >
+            <Route path="/links">
               <Links />
             </Route>
           </Switch>

@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import AboutCard from "./AboutCard";
+import Header from "./Header";
+import Footer from "./Footer"
 
 const Home = () => {
   return (
     <>
+    <Header/>
       <Wrapper>
         <ImgWrapper>
           <Img src="/img.jpg" />
@@ -15,6 +18,7 @@ const Home = () => {
           </AboutWrapper>
         </CardWrapper>
       </Wrapper>
+      <Footer/>
     </>
   );
 };

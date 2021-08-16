@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./Components/Home";
-import Header from "./Components/Header";
 import GlobalStyles from "./Components/GlobalStyles";
 import Projects from "./Components/Projects";
-import Footer from "./Components/Footer";
+// import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
 import Links from "./Components/Links";
 
@@ -17,7 +16,7 @@ function App() {
       <BrowserRouter>
         <Wrapper>
           <GlobalStyles />
-          <Header />
+          {/* <Header /> */}
           <Switch>
             <Route path="/" exact>
               <Home />
@@ -33,7 +32,7 @@ function App() {
             </Route>
           </Switch>
         </Wrapper>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </>
   );

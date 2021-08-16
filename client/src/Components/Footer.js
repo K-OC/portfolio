@@ -17,8 +17,8 @@ const FooterWrapper = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
+height: 1.9rem;
 gap:13px;
-background-color:#00796b;
 width: 100vw;
 line-height: 1;
 padding: 0;

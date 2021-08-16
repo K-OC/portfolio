@@ -2,10 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import Header from "./Header";
+import Footer from "./Footer";
+
 
 const Projects = () => {
   return (
     <>
+    <Header/>
       <WrapperWrapper>
         <Wrapper>
           <Carousel
@@ -89,6 +93,7 @@ const Projects = () => {
           </ParText>{" "}
         </Description>
       </WrapperWrapper>
+      <Footer/>
     </>
   );
 };

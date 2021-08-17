@@ -7,7 +7,7 @@ const Links = () => {
     <>
       <Wrapper>
         <StyledNav to="/" exact>
-          Back
+          ← Back
         </StyledNav>
         <h2>Links</h2>
         <h3>music</h3>
@@ -55,9 +55,10 @@ const StyledLink = styled.a`
   color: blue;
   text-decoration: none;
   &:visited {
-    text-decoration: underline;
     color: purple;
   }
 `;
-const StyledNav = styled(Link)``;
+const StyledNav = styled(Link)`
+  text-decoration: none;
+`;
 export default Links;

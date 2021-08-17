@@ -9,8 +9,6 @@ import Contact from "./Components/Contact";
 import Links from "./Components/Links";
 
 function App() {
-  const [header, setHeader] = useState(null);
-
   return (
     <>
       <BrowserRouter>

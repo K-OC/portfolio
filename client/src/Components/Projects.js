@@ -5,11 +5,10 @@ import { Carousel } from "react-responsive-carousel";
 import Header from "./Header";
 import Footer from "./Footer";
 
-
 const Projects = () => {
   return (
     <>
-    <Header/>
+      <Header />
       <WrapperWrapper>
         <Wrapper>
           <Carousel
@@ -89,18 +88,17 @@ const Projects = () => {
           <ParText>
             Moodr, above all else, is a data collection application. While the
             purpose of the app is not scientific, it can give users the ability
-            to track how they feel across time and place. 
+            to track how they feel across time and place.
           </ParText>{" "}
         </Description>
       </WrapperWrapper>
-      <Footer/>
+      <Footer />
     </>
   );
 };
 const Wrapper = styled.div`
   width: 50vw;
   height: 100vh;
-
   font-family: var(--header-font);
   margin: 0;
 `;
@@ -140,6 +138,9 @@ const ProjectCopy = styled.p`
   margin: 1em;
   line-height: 1;
   padding-bottom: 10px;
+  @media (max-width: 769px) {
+    font-size: 15px;
+  }
 `;
 
 const HeaderText = styled.h1`
@@ -159,6 +160,9 @@ const ParText = styled.p`
   text-align: left;
   padding-left: 2rem;
   padding-bottom: 2rem;
+  @media (max-width: 769px) {
+    font-size: 15px;
+  }
 `;
 const WrapperWrapper = styled.div`
   display: flex;

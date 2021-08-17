@@ -1,14 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-
+import Header from "./Header";
+import Footer from "./Footer";
 const Contact = () => {
   return (
     <>
+      <Header />
       <Wrapper>
         <StyledTitle>Get in touch</StyledTitle>
         <StyledLink href="mailto:owner@kieran-oconnell.ca">Email</StyledLink>
         <StyledLink href="#">Telegram: @kieran7</StyledLink>
-        </Wrapper>
+      </Wrapper>
+      <Footer />
     </>
   );
 };

@@ -4,9 +4,16 @@ import DropList from "./DropList";
 import { SocialIcon } from "react-social-icons";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
+import { useSpring, animated } from "react-spring";
 
 const Header = () => {
   const [clicked, setClicked] = useState(null);
+  const props = useSpring({
+    mass: 9.4,
+    tension: 463,
+    precision: 0.222,
+    velocity: -6,
+  });
   const handleClick = () => {
     if (clicked !== true) {
       setClicked(true);
@@ -39,9 +46,11 @@ const Header = () => {
         <BurgerWrapper>
           <StyledButton onClick={handleClick}>
             {clicked === true ? (
-              <DropListWrapper>
-                <DropList />
-              </DropListWrapper>
+              <animated.div style={props}>
+                <DropListWrapper>
+                  <DropList />
+                </DropListWrapper>
+              </animated.div>
             ) : (
               <GiHamburgerMenu color="white" size="2rem" />
             )}

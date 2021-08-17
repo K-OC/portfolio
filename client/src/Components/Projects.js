@@ -101,6 +101,10 @@ const Wrapper = styled.div`
   height: 100vh;
   font-family: var(--header-font);
   margin: 0;
+  @media (max-width: 769px) {
+    flex-direction: column;
+    width: 100vw;
+  }
 `;
 
 const CardWrapper = styled.div`
@@ -140,6 +144,7 @@ const ProjectCopy = styled.p`
   padding-bottom: 10px;
   @media (max-width: 769px) {
     font-size: 15px;
+    justify-content: center;
   }
 `;
 
@@ -168,5 +173,8 @@ const WrapperWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media (max-width: 769px) {
+    flex-direction: column-reverse;
+  }
 `;
 export default Projects;

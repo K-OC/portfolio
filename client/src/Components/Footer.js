@@ -28,11 +28,14 @@ const FooterWrapper = styled.div`
 const StyledLink = styled(Link)`
   color: white;
   text-decoration: none;
+  @media (min-width: 1024px) {
+    font-size: 10px;
+  }
   @media (min-width: 768px) {
     font-size: 20px;
   }
-  @media (max-width: 400px) {
-    font-size: 15px;
+  @media (max-width: 414px) {
+    font-size: 20px;
   }
 `;
 export default Footer;

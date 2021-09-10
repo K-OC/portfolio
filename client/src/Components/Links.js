@@ -38,6 +38,9 @@ const Links = () => {
         <StyledLink href="https://www.youtube.com/watch?v=_GxcFx8LZRk">
           grappling
         </StyledLink>
+        <StyledLink href="https://www.newfoundlandproud.com">
+          Throwaway Site
+        </StyledLink>
       </Wrapper>
     </>
   );

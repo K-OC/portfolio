@@ -1,3 +1,4 @@
+import { a } from "@react-spring/web";
 import { createGlobalStyle } from "styled-components";
 import px2vw from "../utils/px2vw";
 export const breakpoints = { tablet: "600px" };
@@ -23,4 +24,12 @@ html, body {
     padding: 0;
     height: 100vh;
     width: 100vw;
-}`;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  cursor: pointer;
+}
+`;
+

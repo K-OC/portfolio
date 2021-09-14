@@ -11,8 +11,15 @@ const Projects = () => {
       <Header />
       <WrapperWrapper>
         <Wrapper>
+          <Description>
+            <ParText>
+              Moodr, above all else, is a data collection application. While the
+              purpose of the app is not scientific, it can give users the
+              ability to track how they feel across time and place.
+            </ParText>
+          </Description>
           <Carousel
-            autoPlay="true"
+            autoPlay="false"
             stopOnHover="true"
             infiniteLoop="true"
             interval="10000"
@@ -80,25 +87,96 @@ const Projects = () => {
               <ProjectCopy>and populates the global feed</ProjectCopy>
             </CardWrapper>
             <CardWrapper>
-              <ProjectCopy><a href="https://github.com/K-OC/moodr">https://github.com/K-OC/moodr</a></ProjectCopy>
+              <ProjectCopy>
+                <a href="https://github.com/K-OC/moodr">
+                  https://github.com/K-OC/moodr
+                </a>
+              </ProjectCopy>
+            </CardWrapper>
+          </Carousel>
+          <Description>
+            <ParText>
+              Following a tutorial, I created Glen Coin using the{" "}
+              <a
+                href="https://remix.ethereum.org/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                etherum IDE
+              </a>
+              , the smart contract itself was written using solidity, and the
+              coin was launched on the Kovan test net. Glen Coin can be sent and
+              received, and can be found on Uniswap, assuming you are searchin
+              the Kovan test net. I created Glen Coin for my friend Glen on his
+              birtday.
+            </ParText>
+          </Description>
+          <Carousel
+            autoPlay="false"
+            stopOnHover="true"
+            infiniteLoop="true"
+            interval="10000"
+            showIndicators="false"
+          >
+            <CardWrapper>
+              <HeaderText>Glen Coin</HeaderText>
+
+              <ImgWrapper>
+                <Img
+                  src="/GLNCOIN.png"
+                  alt="A screen shot showing a metamask wallet containing Glen Coin."
+                  style={{ "max-height": "30vh", "max-width": "45vw" }}
+                />
+              </ImgWrapper>
+              <ProjectCopy>
+                A metamask wallet showing a balance of Glen Coin.
+              </ProjectCopy>
+            </CardWrapper>
+            <CardWrapper>
+              <HeaderText>Glen Coin</HeaderText>
+
+              <ImgWrapper>
+                <a
+                  href="https://kovan.etherscan.io/token/0x84e3f2cd6202172c278509c56912725bcf4c8759?a=0x5a99f4adcce63bf3fda584f6bacc822f17c26deb"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Img
+                    src="/contract.png"
+                    alt=""
+                    style={{ "max-height": "30vh", "max-width": "45vw" }}
+                  />
+                </a>
+              </ImgWrapper>
+              <ProjectCopy>
+                Click this image to see the contract on Etherscan
+              </ProjectCopy>
+            </CardWrapper>
+            <CardWrapper>
+              <HeaderText>Glen Coin</HeaderText>
+
+              <ImgWrapper>
+                <Img
+                  src="/glen.jpg"
+                  alt="My friend Glen standing in a doorway holding a cat inside of a big paper bag."
+                  style={{ "max-height": "30vh", "max-width": "45vw" }}
+                />
+              </ImgWrapper>
+              <ProjectCopy>
+                The titular Glen who is famously beloved by cats.
+              </ProjectCopy>
             </CardWrapper>
           </Carousel>
         </Wrapper>
-        <Description>
-          <ParText>
-            Moodr, above all else, is a data collection application. While the
-            purpose of the app is not scientific, it can give users the ability
-            to track how they feel across time and place.
-          </ParText>{" "}
-        </Description>
       </WrapperWrapper>
+
       <Footer />
     </>
   );
 };
 const Wrapper = styled.div`
   width: 50vw;
-  height: 100vh;
+  height: fit-content;
   font-family: var(--header-font);
   margin: 0;
   @media (max-width: 769px) {
@@ -113,7 +191,7 @@ const CardWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   border: 1px solid white;
-  min-height: 80vh;
+  height: 50vh;
   min-width: 50vw;
 
   padding: 1px;
@@ -154,8 +232,9 @@ const HeaderText = styled.h1`
 `;
 const Description = styled.div`
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  justify-content: space-evenly;
   padding-right: 20%;
 `;
 const ParText = styled.p`
@@ -173,6 +252,8 @@ const WrapperWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  justify-content: center;
+
   @media (max-width: 769px) {
     flex-direction: column-reverse;
   }

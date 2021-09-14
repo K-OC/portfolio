@@ -80,7 +80,7 @@ const Projects = () => {
               <ProjectCopy>and populates the global feed</ProjectCopy>
             </CardWrapper>
             <CardWrapper>
-              <ProjectCopy>https://github.com/K-OC/moodr</ProjectCopy>
+              <ProjectCopy><a href="https://github.com/K-OC/moodr">https://github.com/K-OC/moodr</a></ProjectCopy>
             </CardWrapper>
           </Carousel>
         </Wrapper>

@@ -24,7 +24,7 @@ const Projects = () => {
             infiniteLoop="true"
             interval="10000"
             showIndicators="false"
-          >
+            showThumbs={false}          >
             <CardWrapper>
               <HeaderText>Moodr</HeaderText>
 
@@ -32,7 +32,7 @@ const Projects = () => {
                 <Img
                   src="/moodr1.JPG"
                   alt="full screen shot of moodr, page contents include global feed, a map with several crow icons on it, and a dropdown list of emotions to select from."
-                  style={{ "max-height": "30vh", "max-width": "45vw" }}
+                  style={{ "maxHeight": "30vh", "maxWidth": "45vw" }}
                 />
               </ImgWrapper>
               <ProjectCopy>
@@ -117,6 +117,7 @@ const Projects = () => {
             infiniteLoop="true"
             interval="10000"
             showIndicators="false"
+            showThumbs={false}
           >
             <CardWrapper>
               <HeaderText>Glen Coin</HeaderText>
@@ -125,7 +126,7 @@ const Projects = () => {
                 <Img
                   src="/GLNCOIN.png"
                   alt="A screen shot showing a metamask wallet containing Glen Coin."
-                  style={{ "max-height": "30vh", "max-width": "45vw" }}
+                  style={{ "maxHeight": "30vh", "maxWidth": "45vw" }}
                 />
               </ImgWrapper>
               <ProjectCopy>
@@ -144,7 +145,7 @@ const Projects = () => {
                   <Img
                     src="/contract.png"
                     alt=""
-                    style={{ "max-height": "30vh", "max-width": "45vw" }}
+                    style={{ "maxHeight": "30vh", "maxWidth": "45vw" }}
                   />
                 </a>
               </ImgWrapper>
@@ -159,7 +160,7 @@ const Projects = () => {
                 <Img
                   src="/glen.jpg"
                   alt="My friend Glen standing in a doorway holding a cat inside of a big paper bag."
-                  style={{ "max-height": "30vh", "max-width": "45vw" }}
+                  style={{ "maxHeight": "30vh", "maxWidth": "45vw" }}
                 />
               </ImgWrapper>
               <ProjectCopy>

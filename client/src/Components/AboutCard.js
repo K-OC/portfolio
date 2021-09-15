@@ -30,7 +30,7 @@ const Wrapper = styled.div`
   width: 40vw;
   min-height: fit-content;
   padding: 1rem;
-  max-height: 40vh;
+  max-height: 70vh;
   margin-top: 2rem;
   color: #e6e6e6;
   font-family: var(--header-font);
@@ -43,8 +43,15 @@ const HeaderText = styled.h1`
   line-height: 1.2;
 `;
 const BodyCopy = styled.p`
-  text-align: left;
-  line-height: 1.2;
+text-align: left;
+line-height: 1.2;
+
+  @media (max-width: 768px) {
+    font-size: 1.7rem;
+}
+@media (min-width: 1024px) {
+    font-size: 1.9rem;
+  }
 `;
 
 export default AboutCard;

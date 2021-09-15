@@ -42,6 +42,7 @@ const Img = styled.img`
 const AboutWrapper = styled.div`
   width: 50vw;
   height: 100vh;
+  margin-top: 1.5rem;
 `;
 // const ProjectsWrapper = styled.div`
 // height: 50vh;

@@ -44,11 +44,12 @@ const Wrapper = styled.div`
   @media (max-width: 769px) {
     font-size: 1rem;
   }
+
 `;
 
 const List = styled.ul``;
 const Item = styled.li`
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: bold;
   border: 1px solid white;
 `;

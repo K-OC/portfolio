@@ -105,9 +105,9 @@ const Projects = () => {
                 etherum IDE
               </a>
               , the smart contract itself was written using solidity, and the
-              coin was launched on the Kovan test net. Glen Coin can be sent and
-              received, and can be found on Uniswap, assuming you are searchin
-              the Kovan test net. I created Glen Coin for my friend Glen on his
+              coin was launched on the Kovan test net. Glen Coin can be sent,
+              received, and can be found on Uniswap if browsing the Kovan network. 
+              I created Glen Coin for my friend Glen on his
               birtday.
             </ParText>
           </Description>

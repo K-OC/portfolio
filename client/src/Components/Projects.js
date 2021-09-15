@@ -180,7 +180,7 @@ const CardWrapper = styled.div`
   border: 1px solid white;
   height: 50vh;
   min-width: 50vw;
-
+  
   padding: 1px;
   color: white;
   @media (max-width: 769px) {
@@ -230,7 +230,7 @@ const ParText = styled.p`
   line-height: 1;
   text-align: left;
   padding-left: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 4rem;
   @media (max-width: 769px) {
     font-size: 15px;
   }
